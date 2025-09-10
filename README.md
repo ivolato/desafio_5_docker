@@ -11,7 +11,7 @@ git clone https://github.com/ivolato/desafio_5_docker.git
 ## Introducimos las credenciales que utilizara Terraform para conectarse a AWS
 ```
 cd desafio_5_docker
-docker-compose up -d --buid
+docker-compose up --buid
 ```
 
 
