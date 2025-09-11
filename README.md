@@ -8,7 +8,7 @@ local para que corra una aplicación de nestjs con docker-compose.
 git clone https://github.com/ivolato/desafio_5_docker.git
 ```
 
-## Introducimos las credenciales que utilizara Terraform para conectarse a AWS
+## Creamos la imagen, el contenedor para la DB y el contenedor de NestJS.
 ```
 cd desafio_5_docker
 docker-compose up -d --build
