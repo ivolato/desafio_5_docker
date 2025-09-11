@@ -1,4 +1,6 @@
 version: '3.9'
+
+#Contenedor para Mongodb.
 services:
   mongo:
    restart: always
@@ -10,6 +12,7 @@ services:
    expose:
       - 27017
 
+#Contenedor Netjs.
   nestjs:
     build: .
     ports:
@@ -21,8 +24,10 @@ services:
     depends_on:
       - mongo
 
+#Red, conecta mongo y netjs.
 networks:
   express-mongo:
 
+#Persistencia para la db (Modo Productivo).
 volumes:
   mongo_data:
